@@ -14,5 +14,5 @@ for code_seq in (clue):
         next_char = chr (ascii_code_seq)
     answer = answer + next_char
 print (answer)
-print ('hello')
+
 
