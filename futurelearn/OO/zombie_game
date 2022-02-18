@@ -1,0 +1,32 @@
+
+import room
+
+
+
+dining_room = FunctionRoom ("diningroom",'5 Elm Terrace','large room with big table','catering')
+
+ballroom = FunctionRoom("ballroom",'5 Elm Terrace','large room with grand piano','dancing')
+      
+main_kitchen = Kitchen ('main_kitchen', '5 Elm Terrace', 'modern kitchen', 'gas')
+
+
+directions = ['North','South','East','West','Up','Down'  ]  
+
+current_room = main_kitchen          
+
+while True:		
+    print("\n")  
+       
+    current_room.get_details()   
+    inhabitant = current_room.get_character ()
+    #print ('habitant', inhabitant)
+    if inhabitant is not None:
+        inhabitant.describe()
+    command = input("> ")   
+    if command in directions: 
+        current_room = current_room.move(command) 
+    elif command == 'Talk':
+        print ('Who To? ')
+    elif command == 'Fight':
+        print('ok lets go')    
+    
