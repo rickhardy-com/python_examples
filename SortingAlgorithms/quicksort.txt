@@ -1,0 +1,1 @@
+﻿Put blue pointer at the end of the list (This pointer will move between cards)Put the red pointer at the beginning of the list (This pointer will never change cards)While the pointers are not on the same card	If the card values are in the wrong order       Then swap the cards	Move the blue pointer one card towards the red pointer
